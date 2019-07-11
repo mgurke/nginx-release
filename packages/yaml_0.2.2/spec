@@ -1,0 +1,7 @@
+---
+name: yaml_0.2.2
+
+dependencies: []
+
+files:
+- yaml_0.2.2/yaml-0.2.2.tar.gz #from https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.gz

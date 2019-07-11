@@ -1,0 +1,16 @@
+---
+name: nginx
+
+templates: 
+    ctl.erb: bin/ctl
+    nginx.conf.erb: etc/nginx.conf
+
+packages:
+- nginx_1.17.1
+
+properties: 
+    hello.message:
+        description: "Hallo"
+        default: "#Läuft bei Dir"
+    nginx_conf:
+        description: "Contents of the nginx.conf"

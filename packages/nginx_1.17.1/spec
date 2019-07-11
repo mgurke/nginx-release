@@ -1,0 +1,11 @@
+---
+name: nginx_1.17.1
+
+dependencies: []
+
+
+files: 
+- nginx_1.17.1/nginx-1.17.1.tar.gz #from https://nginx.org/download/nginx-1.17.1.tar.gz
+- pcre_8.40/pcre-8.40.tar.gz # from https://ftp.pcre.org/pub/pcre/pcre-8.40.tar.gz
+
+

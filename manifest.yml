@@ -1,0 +1,56 @@
+---
+name: nginx
+
+releases:
+- name: nginx
+  version: latest
+
+stemcells:
+  - alias: default
+    os: ubuntu-trusty
+    version: latest
+
+update:
+  canaries: 1
+  max_in_flight: 1
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+
+instance_groups:
+- name: nginx
+  instances: 1
+  azs: [z1]
+  jobs:
+  - name: nginx
+    release: nginx
+    properties:
+      port: 80
+      nginx_conf: | 
+        #####################################
+        http {
+          upstream myapp1 {
+              server server.1 
+              server server.2 
+              server server.3 
+          }
+
+          server {
+              listen port 80 
+
+              location / {
+                  proxy_pass http://myapp1 
+              }
+            }
+          server {
+              listen port 81 
+
+              location / {
+                  proxy_pass http://www.evoila.de
+              }  
+          }
+        #####################################
+  vm_type: default
+  stemcell: default
+  persistent_disk_type: default
+  networks:
+  - name: default

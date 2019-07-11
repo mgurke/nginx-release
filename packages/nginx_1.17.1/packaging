@@ -1,0 +1,13 @@
+set -e -x
+tar xzvf nginx_1.17.1/nginx-1.17.1.tar.gz
+tar xzvf pcre_8.40/pcre-8.40.tar.gz
+
+
+pushd nginx-1.17.1
+    ./configure --prefix=${BOSH_INSTALL_TARGET} \
+    --with-pcre=../pcre-8.40 \
+    --with-debug
+
+    make
+    make install
+popd
