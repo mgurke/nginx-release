@@ -1,9 +1,0 @@
-set -e -x
-
-tar xzf yaml_0.2.2/yaml-0.2.2.tar.gz
-pushd yaml-0.2.2
-  ./configure --prefix=${BOSH_INSTALL_TARGET}
-
-  make
-  make install
-popd
