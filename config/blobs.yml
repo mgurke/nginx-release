@@ -4,6 +4,3 @@ nginx_1.17.1/nginx-1.17.1.tar.gz:
 pcre_8.40/pcre-8.40.tar.gz:
   size: 2065161
   sha: sha256:1d75ce90ea3f81ee080cdc04e68c9c25a9fb984861a0618be7bbf676b18eda3e
-yaml_0.2.2/yaml-0.2.2.tar.gz:
-  size: 609359
-  sha: sha256:4a9100ab61047fd9bd395bcef3ce5403365cafd55c1e0d0299cde14958e47be9
