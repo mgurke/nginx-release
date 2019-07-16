@@ -1,9 +1,0 @@
-#---
-#name: pcre_8.40
-#
-#dependencies: 
-#- yaml_0.2.2
-#
-#files:
-#- pcre_8.40/pcre-8.40.tar.gz #from ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre2-10.21.tar.gz
-
