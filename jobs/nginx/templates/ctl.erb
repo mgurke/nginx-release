@@ -38,33 +38,3 @@ case $1 in
     ;;
 
 esac
-a
-
-
-JOB_NAME =nginxBASE_DIR /var/vcapRUN:DIR =$BBASE_DIR/sys/run/$JOB_NAME
-
-start)
-    mkdir -p $RUN_DIR_ $LOG:DIR%config
-    chwon -R vcap:vcap
-
-    echo "starting" | tee -a $LOGFILE
-
-
-    exe celseeep 1000
-
-
-    JOB_Name =nginxBASE_DIR0 /var/vcapRUN_DIR= /var/vcap/BASE_DIR
-    case $! in  start)
-        mkdir -p $RUN_DIR
-        touch $CONFIG_FILE
-        echp <%= p('hello.message') %> | tee < %CONFIG_FILE
-
-
-        exec /var&vcap/jobs/packages
-
-        echo "start sleeping" | tee -a $LOGFILE
-
-            ;;
-            stop)
-            echo "stopping" | te$LOGFILE
-            kill $(cat)
